@@ -1,0 +1,887 @@
+Wed Jul 15 13:46:06 2026   HQ_RTR   Router>en
+Wed Jul 15 13:46:09 2026   HQ_RTR   Router#conf t
+Wed Jul 15 13:46:16 2026   HQ_RTR   Router(config)#hostname HO_RTR
+Wed Jul 15 13:46:34 2026   ISP_RTR   Router>en
+Wed Jul 15 13:46:37 2026   ISP_RTR   Router#conf t
+Wed Jul 15 13:47:02 2026   ISP_RTR   Router(config)#hostname ISP_RTR
+Wed Jul 15 13:47:35 2026   HQ_RTR   HO_RTR(config)#hostname HQ_RTR
+Wed Jul 15 13:47:54 2026   HO_RTR (R1)   Router>en
+Wed Jul 15 13:47:55 2026   HO_RTR (R1)   Router#conf t
+Wed Jul 15 13:48:08 2026   HO_RTR (R1)   Router(config)#hostname HO_RTR
+Wed Jul 15 13:48:30 2026   BO_RTR (R2)   Router>en
+Wed Jul 15 13:48:33 2026   BO_RTR (R2)   Router#conf t
+Wed Jul 15 13:48:39 2026   BO_RTR (R2)   Router(config)#hostname BO_RTR
+Wed Jul 15 13:48:55 2026   MLS1   Switch>en
+Wed Jul 15 13:48:58 2026   MLS1   Switch#conf t
+Wed Jul 15 13:49:04 2026   MLS1   Switch(config)#hostname MLS1
+Wed Jul 15 13:49:15 2026   MLS2   Switch>en
+Wed Jul 15 13:49:16 2026   MLS2   Switch#conf t
+Wed Jul 15 13:49:27 2026   MLS2   Switch(config)#hostname MLS2
+Wed Jul 15 13:49:43 2026   SW1   Switch>en
+Wed Jul 15 13:49:46 2026   SW1   Switch#conf t
+Wed Jul 15 13:49:51 2026   SW1   Switch(config)#hostname SW1
+Wed Jul 15 13:50:00 2026   SW2   Switch>en
+Wed Jul 15 13:50:03 2026   SW2   Switch#conf t
+Wed Jul 15 13:50:10 2026   SW2   Switch(config)#hostname SW2
+Wed Jul 15 13:52:09 2026   HQ_RTR   HQ_RTR(config)#service ?
+Wed Jul 15 13:52:22 2026   HQ_RTR   HQ_RTR(config)#?
+Wed Jul 15 13:52:54 2026   HQ_RTR   HQ_RTR(config)#enable ?
+Wed Jul 15 13:53:25 2026   HQ_RTR   HQ_RTR(config)#enable secret globaltech123 ?
+Wed Jul 15 13:53:28 2026   HQ_RTR   HQ_RTR(config)#enable secret globaltech123
+Wed Jul 15 13:53:45 2026   ISP_RTR   ISP_RTR(config)#enable secret globaltech123
+Wed Jul 15 13:53:52 2026   HO_RTR (R1)   HO_RTR(config)#enable secret globaltech123
+Wed Jul 15 13:53:58 2026   BO_RTR (R2)   BO_RTR(config)#enable secret globaltech123
+Wed Jul 15 13:54:04 2026   MLS1   MLS1(config)#enable secret globaltech123
+Wed Jul 15 13:54:11 2026   MLS2   MLS2(config)#enable secret globaltech123
+Wed Jul 15 13:54:19 2026   SW1   SW1(config)#enable secret globaltech123
+Wed Jul 15 13:54:27 2026   SW2   SW2(config)#enable secret globaltech123
+Wed Jul 15 13:54:36 2026   HQ_RTR   HQ_RTR(config)#service ?
+Wed Jul 15 13:54:39 2026   HQ_RTR   HQ_RTR(config)#service password-encryption ?
+Wed Jul 15 13:54:42 2026   HQ_RTR   HQ_RTR(config)#service password-encryption
+Wed Jul 15 13:54:53 2026   ISP_RTR   ISP_RTR(config)#service password-encryption
+Wed Jul 15 13:54:58 2026   HO_RTR (R1)   HO_RTR(config)#service password-encryption
+Wed Jul 15 13:55:10 2026   BO_RTR (R2)   BO_RTR(config)#service password-encryption
+Wed Jul 15 13:55:15 2026   MLS1   MLS1(config)#service password-encryption
+Wed Jul 15 13:55:20 2026   MLS2   MLS2(config)#service password-encryption
+Wed Jul 15 13:55:25 2026   SW1   SW1(config)#service password-encryption
+Wed Jul 15 13:55:31 2026   SW2   SW2(config)#service password-encryption
+Wed Jul 15 13:55:57 2026   HQ_RTR   HQ_RTR(config)#?
+Wed Jul 15 13:56:11 2026   HQ_RTR   HQ_RTR(config)#banner ?
+Wed Jul 15 13:56:22 2026   HQ_RTR   HQ_RTR(config)#banner motd ?
+Wed Jul 15 13:57:10 2026   HQ_RTR   HQ_RTR(config)#banner motd UNAUTHORIZED ACCESS PROHIBITED - GLOBALTECH SOLUTIONS
+Wed Jul 15 13:57:30 2026   HQ_RTR   HQ_RTR(config)#end
+Wed Jul 15 13:57:36 2026   HQ_RTR   HQ_RTR#exit
+Wed Jul 15 13:57:52 2026   HQ_RTR   HQ_RTR>en
+Wed Jul 15 13:59:47 2026   HQ_RTR   HQ_RTR#conf t
+Wed Jul 15 14:00:06 2026   HQ_RTR   HQ_RTR(config)#end
+Wed Jul 15 14:00:09 2026   HQ_RTR   HQ_RTR#exit
+Wed Jul 15 14:00:20 2026   HQ_RTR   HQ_RTR>en
+Wed Jul 15 14:02:37 2026   HQ_RTR   HQ_RTR#sh run
+Wed Jul 15 14:03:45 2026   HQ_RTR   HQ_RTR#sh running-config ?
+Wed Jul 15 14:04:01 2026   HQ_RTR   HQ_RTR#sh running-config | include ?
+Wed Jul 15 14:04:07 2026   HQ_RTR   HQ_RTR#sh running-config | include banner
+Wed Jul 15 14:06:46 2026   HQ_RTR   HQ_RTR#conf t
+Wed Jul 15 14:06:47 2026   HQ_RTR   HQ_RTR(config)#?
+Wed Jul 15 14:06:53 2026   HQ_RTR   HQ_RTR(config)#banner ?
+Wed Jul 15 14:06:58 2026   HQ_RTR   HQ_RTR(config)#banner motd ?
+Wed Jul 15 14:07:30 2026   HQ_RTR   HQ_RTR(config)#banner motd 'UNAUTHORIZED ACCESS PROHIBITED - GLOBALTECH SOLUTIONS'
+Wed Jul 15 14:07:35 2026   HQ_RTR   HQ_RTR(config)#sh run
+Wed Jul 15 14:07:41 2026   HQ_RTR   HQ_RTR(config)#so sh run
+Wed Jul 15 14:07:47 2026   HQ_RTR   HQ_RTR(config)#do sh run
+Wed Jul 15 14:08:16 2026   HQ_RTR   HQ_RTR(config)#end
+Wed Jul 15 14:08:43 2026   HQ_RTR   HQ_RTR#sh run | ?
+Wed Jul 15 14:08:55 2026   HQ_RTR   HQ_RTR#sh run | include banner
+Wed Jul 15 14:13:36 2026   HQ_RTR   HQ_RTR#conf t
+Wed Jul 15 14:13:49 2026   HQ_RTR   HQ_RTR(config)#banner motd ?
+Wed Jul 15 14:14:11 2026   HQ_RTR   HQ_RTR(config)#banner motd *UNAUTHORIZED ACCESS PROHIBITED - GLOBALTECH SOLUTIONS*
+Wed Jul 15 14:14:18 2026   HQ_RTR   HQ_RTR(config)#do sh run
+Wed Jul 15 14:15:31 2026   HQ_RTR   HQ_RTR(config)#end
+Wed Jul 15 14:15:37 2026   HQ_RTR   HQ_RTR#exit
+Wed Jul 15 14:17:33 2026   ISP_RTR   ISP_RTR>en
+Wed Jul 15 14:17:47 2026   ISP_RTR   ISP_RTR#conf t
+Wed Jul 15 14:17:56 2026   ISP_RTR   ISP_RTR(config)#banner motd *UNAUTHORIZED ACCESS PROHIBITED - GLOBALTECH SOLUTIONS*
+Wed Jul 15 14:18:10 2026   HO_RTR (R1)   HO_RTR>en
+Wed Jul 15 14:18:19 2026   HO_RTR (R1)   HO_RTR#conf t
+Wed Jul 15 14:18:26 2026   HO_RTR (R1)   HO_RTR(config)#banner motd *UNAUTHORIZED ACCESS PROHIBITED - GLOBALTECH SOLUTIONS*
+Wed Jul 15 14:18:35 2026   BO_RTR (R2)   BO_RTR>en
+Wed Jul 15 14:18:46 2026   BO_RTR (R2)   BO_RTR#conf t
+Wed Jul 15 14:18:54 2026   BO_RTR (R2)   BO_RTR(config)#banner motd *UNAUTHORIZED ACCESS PROHIBITED - GLOBALTECH SOLUTIONS*
+Wed Jul 15 14:19:03 2026   MLS1   MLS1>en
+Wed Jul 15 14:19:15 2026   MLS1   MLS1#conf t
+Wed Jul 15 14:19:28 2026   MLS1   MLS1(config)#banner motd *UNAUTHORIZED ACCESS PROHIBITED - GLOBALTECH SOLUTIONS*
+Wed Jul 15 14:19:34 2026   MLS2   MLS2>en
+Wed Jul 15 14:19:45 2026   MLS2   MLS2#conf t
+Wed Jul 15 14:19:53 2026   MLS2   MLS2(config)#banner motd *UNAUTHORIZED ACCESS PROHIBITED - GLOBALTECH SOLUTIONS*
+Wed Jul 15 14:20:01 2026   SW1   SW1>en
+Wed Jul 15 14:20:11 2026   SW1   SW1#conf t
+Wed Jul 15 14:20:18 2026   SW1   SW1(config)#banner motd *UNAUTHORIZED ACCESS PROHIBITED - GLOBALTECH SOLUTIONS*
+Wed Jul 15 14:20:25 2026   SW2   SW2>en
+Wed Jul 15 14:20:37 2026   SW2   SW2#conf t
+Wed Jul 15 14:20:44 2026   SW2   SW2(config)#banner motd *UNAUTHORIZED ACCESS PROHIBITED - GLOBALTECH SOLUTIONS*
+Wed Jul 15 14:21:37 2026   HQ_RTR   HQ_RTR>en
+Wed Jul 15 14:21:56 2026   HQ_RTR   HQ_RTR#conf t
+Wed Jul 15 14:22:00 2026   HQ_RTR   HQ_RTR(config)#service ?
+Wed Jul 15 14:22:31 2026   HQ_RTR   HQ_RTR(config)#?
+Wed Jul 15 14:22:44 2026   HQ_RTR   HQ_RTR(config)#enable ?
+Wed Jul 15 14:25:08 2026   HQ_RTR   HQ_RTR(config)#?
+Wed Jul 15 14:25:23 2026   HQ_RTR   HQ_RTR(config)#line ?
+Wed Jul 15 14:25:52 2026   HQ_RTR   HQ_RTR(config)#line console ?
+Wed Jul 15 14:26:10 2026   HQ_RTR   HQ_RTR(config)#line console 0 
+Wed Jul 15 14:26:13 2026   HQ_RTR   HQ_RTR(config-line)#?
+Wed Jul 15 14:26:36 2026   HQ_RTR   HQ_RTR(config-line)#password console123
+Wed Jul 15 14:26:45 2026   HQ_RTR   HQ_RTR(config-line)#?
+Wed Jul 15 14:27:06 2026   HQ_RTR   HQ_RTR(config-line)#login ?
+Wed Jul 15 14:27:12 2026   HQ_RTR   HQ_RTR(config-line)#login
+Wed Jul 15 14:27:16 2026   HQ_RTR   HQ_RTR(config-line)#end
+Wed Jul 15 14:28:15 2026   ISP_RTR   ISP_RTR>en
+Wed Jul 15 14:28:33 2026   ISP_RTR   ISP_RTR#conf t
+Wed Jul 15 14:28:38 2026   ISP_RTR   ISP_RTR(config)#?
+Wed Jul 15 14:28:47 2026   ISP_RTR   ISP_RTR(config)#?
+Wed Jul 15 14:28:58 2026   ISP_RTR   ISP_RTR(config)#line ?
+Wed Jul 15 14:29:03 2026   ISP_RTR   ISP_RTR(config)#line console ?
+Wed Jul 15 14:29:18 2026   ISP_RTR   ISP_RTR(config)#line console 0
+Wed Jul 15 14:29:19 2026   ISP_RTR   ISP_RTR(config-line)#?
+Wed Jul 15 14:29:37 2026   ISP_RTR   ISP_RTR(config-line)#password ?
+Wed Jul 15 14:29:48 2026   ISP_RTR   ISP_RTR(config-line)#password console123
+Wed Jul 15 14:30:02 2026   ISP_RTR   ISP_RTR(config-line)#login
+Wed Jul 15 14:30:08 2026   ISP_RTR   ISP_RTR(config-line)#end
+Wed Jul 15 14:30:38 2026   HO_RTR (R1)   HO_RTR>en
+Wed Jul 15 14:31:08 2026   HO_RTR (R1)   HO_RTR>en
+Wed Jul 15 14:31:13 2026   HO_RTR (R1)   HO_RTR#xonf t
+Wed Jul 15 14:31:20 2026   HO_RTR (R1)   HO_RTR#conf t
+Wed Jul 15 14:31:27 2026   HO_RTR (R1)   HO_RTR(config)#line ?
+Wed Jul 15 14:31:32 2026   HO_RTR (R1)   HO_RTR(config)#line console 0
+Wed Jul 15 14:31:33 2026   HO_RTR (R1)   HO_RTR(config-line)#?
+Wed Jul 15 14:31:46 2026   HO_RTR (R1)   HO_RTR(config-line)#password console123
+Wed Jul 15 14:31:54 2026   HO_RTR (R1)   HO_RTR(config-line)#login 
+Wed Jul 15 14:31:59 2026   HO_RTR (R1)   HO_RTR(config-line)#end
+Wed Jul 15 14:32:15 2026   BO_RTR (R2)   BO_RTR>en
+Wed Jul 15 14:32:28 2026   BO_RTR (R2)   BO_RTR#conf t
+Wed Jul 15 14:32:38 2026   BO_RTR (R2)   BO_RTR(config)#line console 0
+Wed Jul 15 14:32:48 2026   BO_RTR (R2)   BO_RTR(config-line)#password console123
+Wed Jul 15 14:32:54 2026   BO_RTR (R2)   BO_RTR(config-line)#login 
+Wed Jul 15 14:32:56 2026   BO_RTR (R2)   BO_RTR(config-line)#end
+Wed Jul 15 14:33:07 2026   MLS1   MLS1>en
+Wed Jul 15 14:33:27 2026   MLS1   MLS1#conf t
+Wed Jul 15 14:33:47 2026   MLS1   MLS1(config)#line console 0
+Wed Jul 15 14:34:01 2026   MLS1   MLS1(config-line)#password console123
+Wed Jul 15 14:34:06 2026   MLS1   MLS1(config-line)#login 
+Wed Jul 15 14:34:08 2026   MLS1   MLS1(config-line)#end
+Wed Jul 15 14:34:17 2026   MLS2   MLS2>en
+Wed Jul 15 14:34:33 2026   MLS2   MLS2#conf t
+Wed Jul 15 14:34:48 2026   MLS2   MLS2(config)#line console 0
+Wed Jul 15 14:35:02 2026   MLS2   MLS2(config-line)#password console123
+Wed Jul 15 14:35:07 2026   MLS2   MLS2(config-line)#login 
+Wed Jul 15 14:35:10 2026   MLS2   MLS2(config-line)#end
+Wed Jul 15 14:35:21 2026   SW1   SW1>en
+Wed Jul 15 14:35:33 2026   SW1   SW1#conf t
+Wed Jul 15 14:35:42 2026   SW1   SW1(config)#line console 0
+Wed Jul 15 14:36:02 2026   SW1   SW1(config-line)#password console123
+Wed Jul 15 14:36:07 2026   SW1   SW1(config-line)#login 
+Wed Jul 15 14:36:09 2026   SW1   SW1(config-line)#end
+Wed Jul 15 14:36:23 2026   SW2   SW2>en
+Wed Jul 15 14:36:36 2026   SW2   SW2#conf t
+Wed Jul 15 14:36:50 2026   SW2   SW2(config)#line console 0
+Wed Jul 15 14:37:06 2026   SW2   SW2(config-line)#password console123
+Wed Jul 15 14:37:17 2026   SW2   SW2(config-line)#login
+Wed Jul 15 14:37:21 2026   SW2   SW2(config-line)#end
+Wed Jul 15 14:43:04 2026   HQ_RTR   HQ_RTR>en
+Wed Jul 15 14:43:29 2026   HQ_RTR   HQ_RTR#conf t
+Wed Jul 15 14:43:48 2026   HQ_RTR   HQ_RTR(config)#line ?
+Wed Jul 15 14:43:55 2026   HQ_RTR   HQ_RTR(config)#line vty ?
+Wed Jul 15 14:44:04 2026   HQ_RTR   HQ_RTR(config)#line vty 0 ?
+Wed Jul 15 14:44:16 2026   HQ_RTR   HQ_RTR(config)#line vty 0 15
+Wed Jul 15 14:44:21 2026   HQ_RTR   HQ_RTR(config-line)#?
+Wed Jul 15 14:45:01 2026   HQ_RTR   HQ_RTR(config-line)#password telnet123
+Wed Jul 15 14:45:18 2026   HQ_RTR   HQ_RTR(config-line)#?
+Wed Jul 15 14:45:33 2026   HQ_RTR   HQ_RTR(config-line)#login 
+Wed Jul 15 14:45:56 2026   HQ_RTR   HQ_RTR(config-line)#transport ?
+Wed Jul 15 14:46:02 2026   HQ_RTR   HQ_RTR(config-line)#transport input ?
+Wed Jul 15 14:46:08 2026   HQ_RTR   HQ_RTR(config-line)#transport input telnet ?
+Wed Jul 15 14:46:11 2026   HQ_RTR   HQ_RTR(config-line)#transport input telnet
+Wed Jul 15 14:46:14 2026   HQ_RTR   HQ_RTR(config-line)#end
+Wed Jul 15 14:48:17 2026   ISP_RTR   ISP_RTR>en
+Wed Jul 15 14:48:43 2026   ISP_RTR   ISP_RTR#conf t
+Wed Jul 15 14:48:53 2026   ISP_RTR   ISP_RTR(config)#line ?
+Wed Jul 15 14:48:58 2026   ISP_RTR   ISP_RTR(config)#line vty ?
+Wed Jul 15 14:49:05 2026   ISP_RTR   ISP_RTR(config)#line vty 0 15 
+Wed Jul 15 14:49:07 2026   ISP_RTR   ISP_RTR(config-line)#?
+Wed Jul 15 14:49:21 2026   ISP_RTR   ISP_RTR(config-line)#password telnet123
+Wed Jul 15 14:49:32 2026   ISP_RTR   ISP_RTR(config-line)#login 
+Wed Jul 15 14:49:34 2026   ISP_RTR   ISP_RTR(config-line)#?
+Wed Jul 15 14:49:40 2026   ISP_RTR   ISP_RTR(config-line)#transport ?
+Wed Jul 15 14:49:45 2026   ISP_RTR   ISP_RTR(config-line)#transport input ?
+Wed Jul 15 14:49:51 2026   ISP_RTR   ISP_RTR(config-line)#transport input telnet ?
+Wed Jul 15 14:49:55 2026   ISP_RTR   ISP_RTR(config-line)#transport input telnet
+Wed Jul 15 14:50:07 2026   ISP_RTR   ISP_RTR(config-line)#end
+Wed Jul 15 14:51:17 2026   HO_RTR (R1)   HO_RTR>en
+Wed Jul 15 14:51:35 2026   HO_RTR (R1)   HO_RTR#conf t
+Wed Jul 15 14:51:46 2026   HO_RTR (R1)   HO_RTR(config)#line vty ?
+Wed Jul 15 14:51:49 2026   HO_RTR (R1)   HO_RTR(config)#line vty 0 15
+Wed Jul 15 14:52:00 2026   HO_RTR (R1)   HO_RTR(config-line)#password telnet123
+Wed Jul 15 14:52:04 2026   HO_RTR (R1)   HO_RTR(config-line)#login 
+Wed Jul 15 14:52:10 2026   HO_RTR (R1)   HO_RTR(config-line)#transport ?
+Wed Jul 15 14:52:14 2026   HO_RTR (R1)   HO_RTR(config-line)#transport input ?
+Wed Jul 15 14:52:18 2026   HO_RTR (R1)   HO_RTR(config-line)#transport input telnet
+Wed Jul 15 14:52:20 2026   HO_RTR (R1)   HO_RTR(config-line)#end
+Wed Jul 15 14:52:47 2026   BO_RTR (R2)   BO_RTR>en
+Wed Jul 15 14:52:57 2026   BO_RTR (R2)   BO_RTR#conf t
+Wed Jul 15 14:53:08 2026   BO_RTR (R2)   BO_RTR(config)#line vty 0 15
+Wed Jul 15 14:53:20 2026   BO_RTR (R2)   BO_RTR(config-line)#password telnet123
+Wed Jul 15 14:53:57 2026   BO_RTR (R2)   BO_RTR(config-line)#login 
+Wed Jul 15 14:54:16 2026   BO_RTR (R2)   BO_RTR(config-line)#transport input telnet 
+Wed Jul 15 14:54:18 2026   BO_RTR (R2)   BO_RTR(config-line)#end
+Wed Jul 15 14:54:40 2026   MLS1   MLS1>en
+Wed Jul 15 14:54:58 2026   MLS1   MLS1#conf t
+Wed Jul 15 14:55:30 2026   MLS1   MLS1(config)#line vty 0 15
+Wed Jul 15 14:55:38 2026   MLS1   MLS1(config-line)#password telnet123
+Wed Jul 15 14:55:42 2026   MLS1   MLS1(config-line)#login 
+Wed Jul 15 14:55:49 2026   MLS1   MLS1(config-line)#transport ?
+Wed Jul 15 14:55:53 2026   MLS1   MLS1(config-line)#transport input ?
+Wed Jul 15 14:55:57 2026   MLS1   MLS1(config-line)#transport input telnet 
+Wed Jul 15 14:56:01 2026   MLS1   MLS1(config-line)#end
+Wed Jul 15 14:56:23 2026   MLS2   MLS2>en
+Wed Jul 15 14:56:32 2026   MLS2   MLS2#conf t
+Wed Jul 15 14:56:45 2026   MLS2   MLS2(config)#line vty 0 15
+Wed Jul 15 14:56:59 2026   MLS2   MLS2(config-line)#password telnet123
+Wed Jul 15 14:57:04 2026   MLS2   MLS2(config-line)#login 
+Wed Jul 15 14:57:19 2026   MLS2   MLS2(config-line)#transport input ?
+Wed Jul 15 14:57:22 2026   MLS2   MLS2(config-line)#transport input telnet 
+Wed Jul 15 14:57:25 2026   MLS2   MLS2(config-line)#end
+Wed Jul 15 14:57:51 2026   SW1   SW1>en
+Wed Jul 15 14:58:02 2026   SW1   SW1#conf t
+Wed Jul 15 14:58:21 2026   SW1   SW1(config)#line vty 0 15
+Wed Jul 15 14:58:28 2026   SW1   SW1(config-line)#password telnet123
+Wed Jul 15 14:58:40 2026   SW1   SW1(config-line)#login 
+Wed Jul 15 14:58:42 2026   SW1   SW1(config-line)#?
+Wed Jul 15 14:58:49 2026   SW1   SW1(config-line)#transport input ?
+Wed Jul 15 14:58:53 2026   SW1   SW1(config-line)#transport input telnet 
+Wed Jul 15 14:58:55 2026   SW1   SW1(config-line)#end
+Wed Jul 15 14:59:24 2026   SW2   SW2>en
+Wed Jul 15 14:59:35 2026   SW2   SW2#conf t
+Wed Jul 15 14:59:45 2026   SW2   SW2(config)#line vty 0 15
+Wed Jul 15 14:59:56 2026   SW2   SW2(config-line)#password telnet123
+Wed Jul 15 15:00:07 2026   SW2   SW2(config-line)#login 
+Wed Jul 15 15:00:29 2026   SW2   SW2(config-line)#transport input telnet 
+Wed Jul 15 15:00:31 2026   SW2   SW2(config-line)#end
+Wed Jul 15 15:00:34 2026   SW2   SW2#write
+Wed Jul 15 15:00:42 2026   SW1   SW1#write
+Wed Jul 15 15:00:49 2026   MLS2   MLS2#write
+Wed Jul 15 15:00:57 2026   MLS1   MLS1#write
+Wed Jul 15 15:01:06 2026   BO_RTR (R2)   BO_RTR#write
+Wed Jul 15 15:01:14 2026   HO_RTR (R1)   HO_RTR#write
+Wed Jul 15 15:01:30 2026   ISP_RTR   ISP_RTR>en
+Wed Jul 15 15:01:39 2026   ISP_RTR   ISP_RTR#write
+Wed Jul 15 15:03:06 2026   HQ_RTR   HQ_RTR>en
+Wed Jul 15 15:03:12 2026   HQ_RTR   HQ_RTR#write
+Wed Jul 15 16:44:38 2026   SW1   SW1>en
+Wed Jul 15 16:45:13 2026   SW1   SW1#conf t
+Wed Jul 15 16:45:28 2026   SW1   SW1(config)#?
+Wed Jul 15 16:45:42 2026   SW1   SW1(config)#vlan ?
+Wed Jul 15 16:45:51 2026   SW1   SW1(config)#vlan 10
+Wed Jul 15 16:45:52 2026   SW1   SW1(config-vlan)#?
+Wed Jul 15 16:46:01 2026   SW1   SW1(config-vlan)#name ?
+Wed Jul 15 16:46:18 2026   SW1   SW1(config-vlan)#name MANAGEMENT
+Wed Jul 15 16:46:34 2026   SW1   SW1(config-vlan)#vlan 20
+Wed Jul 15 16:46:52 2026   SW1   SW1(config-vlan)#name SALES
+Wed Jul 15 16:46:58 2026   SW1   SW1(config-vlan)#vlan 30
+Wed Jul 15 16:47:03 2026   SW1   SW1(config-vlan)#name IT
+Wed Jul 15 16:47:18 2026   SW1   SW1(config-vlan)#?
+Wed Jul 15 16:47:24 2026   SW1   SW1(config-vlan)#exit
+Wed Jul 15 16:47:42 2026   SW2   SW2>en
+Wed Jul 15 16:47:56 2026   SW2   SW2#conf t
+Wed Jul 15 16:48:05 2026   SW2   SW2(config)#vlan 10
+Wed Jul 15 16:48:19 2026   SW2   SW2(config-vlan)#name MANAGEMENT
+Wed Jul 15 16:48:33 2026   SW2   SW2(config-vlan)#name SALES
+Wed Jul 15 16:49:09 2026   SW2   SW2(config-vlan)#name MANAGEMENT
+Wed Jul 15 16:49:25 2026   SW2   SW2(config-vlan)#vlan 20
+Wed Jul 15 16:49:30 2026   SW2   SW2(config-vlan)#name SALES
+Wed Jul 15 16:49:35 2026   SW2   SW2(config-vlan)#vlan 30
+Wed Jul 15 16:49:39 2026   SW2   SW2(config-vlan)#name IT
+Wed Jul 15 16:49:41 2026   SW2   SW2(config-vlan)#exit
+Wed Jul 15 16:50:32 2026   MLS1   MLS1>en
+Wed Jul 15 16:50:41 2026   MLS1   MLS1#conf t
+Wed Jul 15 16:50:57 2026   MLS1   MLS1(config)#vlan 10
+Wed Jul 15 16:51:13 2026   MLS1   MLS1(config-vlan)#name MANAGEMENT
+Wed Jul 15 16:51:20 2026   MLS1   MLS1(config-vlan)#vlan 20
+Wed Jul 15 16:51:33 2026   MLS1   MLS1(config-vlan)#name SALES
+Wed Jul 15 16:51:37 2026   MLS1   MLS1(config-vlan)#vlan 30
+Wed Jul 15 16:51:42 2026   MLS1   MLS1(config-vlan)#name IT
+Wed Jul 15 16:51:47 2026   MLS1   MLS1(config-vlan)#exit 
+Wed Jul 15 16:52:00 2026   MLS2   MLS2>en
+Wed Jul 15 16:52:11 2026   MLS2   MLS2#conf t
+Wed Jul 15 16:52:24 2026   MLS2   MLS2(config)#vlan 10
+Wed Jul 15 16:52:39 2026   MLS2   MLS2(config-vlan)#name MANAGEMENT
+Wed Jul 15 16:52:43 2026   MLS2   MLS2(config-vlan)#vlan 20
+Wed Jul 15 16:53:00 2026   MLS2   MLS2(config-vlan)#name SALES
+Wed Jul 15 16:53:04 2026   MLS2   MLS2(config-vlan)#vlan 30
+Wed Jul 15 16:53:09 2026   MLS2   MLS2(config-vlan)#name IT
+Wed Jul 15 16:53:12 2026   MLS2   MLS2(config-vlan)#exit
+Wed Jul 15 16:55:24 2026   SW2   SW2(config)#do sh vlan brief
+Wed Jul 15 16:58:36 2026   SW1   SW1>ne
+Wed Jul 15 16:59:41 2026   SW1   SW1>en
+Wed Jul 15 16:59:55 2026   SW1   SW1#conf t
+Wed Jul 15 17:00:11 2026   SW1   SW1(config)#int ?
+Wed Jul 15 17:00:21 2026   SW1   SW1(config)#int range ?
+Wed Jul 15 17:00:49 2026   SW1   SW1(config)#int range fastEthernet ?
+Wed Jul 15 17:01:09 2026   SW1   SW1(config)#int range fastEthernet 1?
+Wed Jul 15 17:01:16 2026   SW1   SW1(config)#int range fastEthernet 1-5 ?
+Wed Jul 15 17:01:27 2026   SW1   SW1(config)#int range fastEthernet 1 5?
+Wed Jul 15 17:01:49 2026   SW1   SW1(config)#int range fastEthernet 0/1 ?
+Wed Jul 15 17:02:00 2026   SW1   SW1(config)#int range fastEthernet 0/1- ?
+Wed Jul 15 17:02:07 2026   SW1   SW1(config)#int range fastEthernet 0/1 - ?
+Wed Jul 15 17:02:24 2026   SW1   SW1(config)#int range fastEthernet 0/1 - 5
+Wed Jul 15 17:02:32 2026   SW1   SW1(config-if-range)#?
+Wed Jul 15 17:02:37 2026   SW1   SW1(config-if-range)#switchport ?
+Wed Jul 15 17:02:50 2026   SW1   SW1(config-if-range)#switchport mode ?
+Wed Jul 15 17:02:53 2026   SW1   SW1(config-if-range)#switchport mode access ?
+Wed Jul 15 17:02:55 2026   SW1   SW1(config-if-range)#switchport mode access
+Wed Jul 15 17:03:02 2026   SW1   SW1(config-if-range)#exit
+Wed Jul 15 17:03:10 2026   SW1   SW1(config)#do sh vlan
+Wed Jul 15 17:03:33 2026   SW1   SW1(config)#do sh vlan int brief
+Wed Jul 15 17:03:51 2026   SW1   SW1(config)#do sh vlan brief
+Wed Jul 15 17:04:55 2026   SW1   SW1(config)#int range fastEthernet 0/1 - 5
+Wed Jul 15 17:04:56 2026   SW1   SW1(config-if-range)#?
+Wed Jul 15 17:05:24 2026   SW1   SW1(config-if-range)#switchport ?
+Wed Jul 15 17:05:38 2026   SW1   SW1(config-if-range)#switchport access ?
+Wed Jul 15 17:05:46 2026   SW1   SW1(config-if-range)#switchport access vlan 10
+Wed Jul 15 17:05:53 2026   SW1   SW1(config-if-range)#do sh vlan brief
+Wed Jul 15 17:07:02 2026   SW1   SW1(config-if-range)#exit
+Wed Jul 15 17:07:30 2026   SW1   SW1(config)#int range fastEthernet 0/6 - 10
+Wed Jul 15 17:07:39 2026   SW1   SW1(config-if-range)#switchport mode access 
+Wed Jul 15 17:07:48 2026   SW1   SW1(config-if-range)#switchport access vlan 20
+Wed Jul 15 17:07:54 2026   SW1   SW1(config-if-range)#exit
+Wed Jul 15 17:08:34 2026   SW1   SW1(config)#int range fastEthernet 0/11 - 15
+Wed Jul 15 17:08:43 2026   SW1   SW1(config-if-range)#switchport mode access 
+Wed Jul 15 17:08:52 2026   SW1   SW1(config-if-range)#switchport access vlan 30
+Wed Jul 15 17:08:54 2026   SW1   SW1(config-if-range)#exit
+Wed Jul 15 17:09:06 2026   SW1   SW1(config)#do sh vlan brief
+Wed Jul 15 17:09:52 2026   SW2   SW2>en
+Wed Jul 15 17:10:08 2026   SW2   SW2#conf t
+Wed Jul 15 17:11:01 2026   SW2   SW2(config)#int range fastEthernet 0/1 - 5
+Wed Jul 15 17:11:09 2026   SW2   SW2(config-if-range)#switchport mode access 
+Wed Jul 15 17:11:19 2026   SW2   SW2(config-if-range)#switchport access vlan 10
+Wed Jul 15 17:11:33 2026   SW2   SW2(config-if-range)#int range fastEthernet 0/6 - 10
+Wed Jul 15 17:11:40 2026   SW2   SW2(config-if-range)#switchport mode access 
+Wed Jul 15 17:11:51 2026   SW2   SW2(config-if-range)#switchport access vlan 20
+Wed Jul 15 17:12:06 2026   SW2   SW2(config-if-range)#int range fastEthernet 0/11 - 15
+Wed Jul 15 17:12:14 2026   SW2   SW2(config-if-range)#switchport mode access 
+Wed Jul 15 17:12:24 2026   SW2   SW2(config-if-range)#switchport access vlan 30
+Wed Jul 15 17:12:27 2026   SW2   SW2(config-if-range)#exit
+Wed Jul 15 17:12:38 2026   SW2   SW2(config)#do sh vlan brief
+Wed Jul 15 17:22:46 2026   SW1   SW1>en
+Wed Jul 15 17:23:02 2026   SW1   SW1#en
+Wed Jul 15 17:23:05 2026   SW1   SW1#conf t
+Wed Jul 15 17:23:47 2026   SW1   SW1(config)#int g0/1
+Wed Jul 15 17:23:54 2026   SW1   SW1(config-if)#switchport mode trunk 
+Wed Jul 15 17:24:03 2026   SW1   SW1(config-if)#no shut
+Wed Jul 15 17:24:32 2026   SW1   SW1(config-if)#switchport ?
+Wed Jul 15 17:24:35 2026   SW1   SW1(config-if)#switchport trunk ?
+Wed Jul 15 17:24:38 2026   SW1   SW1(config-if)#switchport trunk allowed ?
+Wed Jul 15 17:24:43 2026   SW1   SW1(config-if)#switchport trunk allowed vlan ?
+Wed Jul 15 17:25:11 2026   SW1   SW1(config-if)#switchport trunk allowed vlan 10
+Wed Jul 15 17:25:18 2026   SW1   SW1(config-if)#switchport trunk allowed vlan 20
+Wed Jul 15 17:25:21 2026   SW1   SW1(config-if)#switchport trunk allowed vlan 30
+Wed Jul 15 17:25:45 2026   SW2   SW2>en
+Wed Jul 15 17:25:57 2026   SW2   SW2#conf t
+Wed Jul 15 17:26:07 2026   SW2   SW2(config)#int g0/1
+Wed Jul 15 17:26:13 2026   SW2   SW2(config-if)#switchport mode trunk 
+Wed Jul 15 17:26:16 2026   SW2   SW2(config-if)#no shut
+Wed Jul 15 17:26:26 2026   SW2   SW2(config-if)#switchport ?
+Wed Jul 15 17:26:31 2026   SW2   SW2(config-if)#switchport trunk ?
+Wed Jul 15 17:26:34 2026   SW2   SW2(config-if)#switchport trunk allowed ?
+Wed Jul 15 17:26:38 2026   SW2   SW2(config-if)#switchport trunk allowed vlan ?
+Wed Jul 15 17:26:45 2026   SW2   SW2(config-if)#switchport trunk allowed vlan 10
+Wed Jul 15 17:26:51 2026   SW2   SW2(config-if)#switchport trunk allowed vlan 20
+Wed Jul 15 17:26:54 2026   SW2   SW2(config-if)#switchport trunk allowed vlan 30
+Wed Jul 15 17:27:01 2026   SW2   SW2(config-if)#exit
+Wed Jul 15 17:27:11 2026   SW1   SW1(config-if)#exit
+Wed Jul 15 17:29:21 2026   MLS1   MLS1>en
+Wed Jul 15 17:29:32 2026   MLS1   MLS1#conf t
+Wed Jul 15 17:30:00 2026   MLS1   MLS1(config)#interface g0/1
+Wed Jul 15 17:30:11 2026   MLS1   MLS1(config-if)#switchport mode trunk 
+Wed Jul 15 17:30:24 2026   MLS1   MLS1(config-if)#switchport ?
+Wed Jul 15 17:30:39 2026   MLS1   MLS1(config-if)#?
+Wed Jul 15 17:30:47 2026   MLS1   MLS1(config-if)#interface g0/1
+Wed Jul 15 17:30:49 2026   MLS1   MLS1(config-if)#?
+Wed Jul 15 17:31:23 2026   MLS1   MLS1(config-if)#?
+Wed Jul 15 17:31:40 2026   MLS1   MLS1(config-if)#exit
+Wed Jul 15 17:31:42 2026   MLS1   MLS1(config)#?
+Wed Jul 15 17:32:09 2026   MLS1   MLS1(config)#interface g0/1
+Wed Jul 15 17:32:10 2026   MLS1   MLS1(config-if)#?
+Wed Jul 15 17:32:32 2026   MLS1   MLS1(config-if)#switchport ?
+Wed Jul 15 17:33:30 2026   MLS1   MLS1(config-if)#switchport trunk ?
+Wed Jul 15 17:33:35 2026   MLS1   MLS1(config-if)#switchport trunk encapsulation ?
+Wed Jul 15 17:33:40 2026   MLS1   MLS1(config-if)#switchport trunk encapsulation dot1q ?
+Wed Jul 15 17:33:43 2026   MLS1   MLS1(config-if)#switchport trunk encapsulation dot1q
+Wed Jul 15 17:33:55 2026   MLS1   MLS1(config-if)#switchport mode trunk 
+Wed Jul 15 17:34:49 2026   MLS1   MLS1(config-if)#switchport ?
+Wed Jul 15 17:34:56 2026   MLS1   MLS1(config-if)#switchport trunk ?
+Wed Jul 15 17:34:59 2026   MLS1   MLS1(config-if)#switchport trunk allowed ?
+Wed Jul 15 17:35:22 2026   MLS1   MLS1(config-if)#switchport trunk allowed vlan 10
+Wed Jul 15 17:35:27 2026   MLS1   MLS1(config-if)#switchport trunk allowed vlan 20
+Wed Jul 15 17:35:30 2026   MLS1   MLS1(config-if)#switchport trunk allowed vlan 30
+Wed Jul 15 17:35:50 2026   MLS1   MLS1(config-if)#int g0/2
+Wed Jul 15 17:36:00 2026   MLS1   MLS1(config-if)#switchport mode trunk 
+Wed Jul 15 17:36:14 2026   MLS1   MLS1(config-if)#switchport trunk ?
+Wed Jul 15 17:36:19 2026   MLS1   MLS1(config-if)#switchport trunk encapsulation ?
+Wed Jul 15 17:36:22 2026   MLS1   MLS1(config-if)#switchport trunk encapsulation dot1q 
+Wed Jul 15 17:36:25 2026   MLS1   MLS1(config-if)#switchport mode trunk 
+Wed Jul 15 17:36:31 2026   MLS1   MLS1(config-if)#switchport trunk allowed vlan 10
+Wed Jul 15 17:36:35 2026   MLS1   MLS1(config-if)#switchport trunk allowed vlan 20
+Wed Jul 15 17:36:38 2026   MLS1   MLS1(config-if)#switchport trunk allowed vlan 30
+Wed Jul 15 17:36:46 2026   MLS1   MLS1(config-if)#exit
+Wed Jul 15 17:37:10 2026   MLS2   MLS2>en
+Wed Jul 15 17:37:26 2026   MLS2   MLS2#conf t
+Wed Jul 15 17:37:53 2026   MLS2   MLS2(config)#int g0/1
+Wed Jul 15 17:38:01 2026   MLS2   MLS2(config-if)#switchport mode trunk 
+Wed Jul 15 17:38:11 2026   MLS2   MLS2(config-if)#switchport trunk encapsulation dot1q 
+Wed Jul 15 17:38:13 2026   MLS2   MLS2(config-if)#switchport mode trunk 
+Wed Jul 15 17:38:33 2026   MLS2   MLS2(config-if)#switchport trunk allowed vlan 10
+Wed Jul 15 17:38:36 2026   MLS2   MLS2(config-if)#switchport trunk allowed vlan 20
+Wed Jul 15 17:38:40 2026   MLS2   MLS2(config-if)#switchport trunk allowed vlan 30
+Wed Jul 15 17:38:43 2026   MLS2   MLS2(config-if)#exit
+Wed Jul 15 17:39:55 2026   HQ_RTR   HQ_RTR>en
+Wed Jul 15 17:40:07 2026   HQ_RTR   HQ_RTR#write
+Wed Jul 15 17:40:29 2026   ISP_RTR   ISP_RTR>en
+Wed Jul 15 17:40:48 2026   ISP_RTR   ISP_RTR#write
+Wed Jul 15 17:41:04 2026   HO_RTR (R1)   HO_RTR>en
+Wed Jul 15 17:41:12 2026   HO_RTR (R1)   HO_RTR#write
+Wed Jul 15 17:41:47 2026   MLS1   MLS1(config)#end
+Wed Jul 15 17:41:50 2026   MLS1   MLS1#write
+Wed Jul 15 17:41:56 2026   MLS2   MLS2(config)#end
+Wed Jul 15 17:41:59 2026   MLS2   MLS2#write
+Wed Jul 15 17:42:11 2026   SW2   SW2>en
+Wed Jul 15 17:42:20 2026   SW2   SW2#write
+Wed Jul 15 17:42:31 2026   SW1   SW1>en
+Wed Jul 15 17:42:39 2026   SW1   SW1#write
+Wed Jul 15 17:46:41 2026   MLS2   MLS2#conf t
+Wed Jul 15 17:46:51 2026   MLS2   MLS2(config)#int g0/2
+Wed Jul 15 17:47:02 2026   MLS2   MLS2(config-if)#switchport mode trunk 
+Wed Jul 15 17:47:15 2026   MLS2   MLS2(config-if)#switchport trunk encapsulation dot1q 
+Wed Jul 15 17:47:27 2026   MLS2   MLS2(config-if)#switchport mode trunk 
+Wed Jul 15 17:47:32 2026   MLS2   MLS2(config-if)#switchport trunk allowed vlan 10
+Wed Jul 15 17:47:39 2026   MLS2   MLS2(config-if)#switchport trunk allowed vlan 20
+Wed Jul 15 17:47:43 2026   MLS2   MLS2(config-if)#switchport trunk allowed vlan 30
+Wed Jul 15 17:47:48 2026   MLS2   MLS2(config-if)#exit
+Wed Jul 15 17:48:03 2026   MLS2   MLS2(config)#end
+Wed Jul 15 17:48:06 2026   MLS2   MLS2#write
+Wed Jul 15 20:02:55 2026   SW1   SW1>en
+Wed Jul 15 20:03:16 2026   SW1   SW1#sh mac ?
+Wed Jul 15 20:03:20 2026   SW1   SW1#sh mac Address-table 
+Wed Jul 15 20:03:47 2026   SW1   SW1#conf t
+Wed Jul 15 20:03:54 2026   SW1   SW1(config)#?
+Wed Jul 15 20:04:06 2026   SW1   SW1(config)#int f0/1
+Wed Jul 15 20:04:10 2026   SW1   SW1(config-if)#switchport ?
+Wed Jul 15 20:04:16 2026   SW1   SW1(config-if)#switchport port-security ?
+Wed Jul 15 20:05:20 2026   SW1   SW1(config-if)#switchport port-security
+Wed Jul 15 20:05:23 2026   SW1   SW1(config-if)#?
+Wed Jul 15 20:05:38 2026   SW1   SW1(config-if)#switchport port-security 
+Wed Jul 15 20:05:41 2026   SW1   SW1(config-if)#switchport port-security ?
+Wed Jul 15 20:06:11 2026   SW1   SW1(config-if)#switchport port-security mac-address ?
+Wed Jul 15 20:06:46 2026   SW1   SW1(config-if)#switchport port-security maximum ?
+Wed Jul 15 20:06:48 2026   SW1   SW1(config-if)#switchport port-security maximum 1
+Wed Jul 15 20:06:53 2026   SW1   SW1(config-if)#switchport port-security maximum 1 ?
+Wed Jul 15 20:06:57 2026   SW1   SW1(config-if)#switchport port-security ?
+Wed Jul 15 20:07:08 2026   SW1   SW1(config-if)#switchport port-security mac-address ?
+Wed Jul 15 20:07:12 2026   SW1   SW1(config-if)#switchport port-security mac-address sticky ?
+Wed Jul 15 20:13:42 2026   SW1   SW1(config-if)#switchport port-security mac-address sticky
+Wed Jul 15 20:15:19 2026   SW1   SW1(config-if)#switchport port-security ?
+Wed Jul 15 20:15:20 2026   SW1   SW1(config-if)#switchport port-security ?
+Wed Jul 15 20:15:25 2026   SW1   SW1(config-if)#switchport port-security violation ?
+Wed Jul 15 20:15:28 2026   SW1   SW1(config-if)#switchport port-security violation shutdown ?
+Wed Jul 15 20:15:29 2026   SW1   SW1(config-if)#switchport port-security violation shutdown
+Wed Jul 15 20:16:38 2026   SW1   SW1(config-if)#do sh port-security int f0/1
+Wed Jul 15 20:17:19 2026   SW1   SW1(config-if)#do sh port-security addresses
+Wed Jul 15 20:17:23 2026   SW1   SW1(config-if)#do sh port-security address
+Wed Jul 15 20:19:03 2026   SW1   SW1(config-if)#do sh port-security address
+Wed Jul 15 20:19:06 2026   SW1   SW1(config-if)#do sh port-security address
+Wed Jul 15 20:19:24 2026   SW1   SW1(config-if)#do sh port-security address
+Wed Jul 15 20:20:02 2026   SW2   SW2>en
+Wed Jul 15 20:20:16 2026   SW2   SW2#conf t
+Wed Jul 15 20:20:24 2026   SW2   SW2(config)#int f0/1
+Wed Jul 15 20:20:25 2026   SW2   SW2(config-if)#?
+Wed Jul 15 20:20:28 2026   SW2   SW2(config-if)#switchport ?
+Wed Jul 15 20:20:43 2026   SW2   SW2(config-if)#switchport port-security ?
+Wed Jul 15 20:20:46 2026   SW2   SW2(config-if)#switchport port-security
+Wed Jul 15 20:20:50 2026   SW2   SW2(config-if)#switchport port-security ?
+Wed Jul 15 20:21:02 2026   SW2   SW2(config-if)#switchport port-security maximum ?
+Wed Jul 15 20:21:04 2026   SW2   SW2(config-if)#switchport port-security maximum 1
+Wed Jul 15 20:21:16 2026   SW2   SW2(config-if)#switchport port-security mac-address ?
+Wed Jul 15 20:21:20 2026   SW2   SW2(config-if)#switchport port-security mac-address sticky ?
+Wed Jul 15 20:21:23 2026   SW2   SW2(config-if)#switchport port-security mac-address sticky
+Wed Jul 15 20:21:29 2026   SW2   SW2(config-if)#switchport port-security ?
+Wed Jul 15 20:21:38 2026   SW2   SW2(config-if)#switchport port-security violation shutdown
+Wed Jul 15 20:21:44 2026   SW2   SW2(config-if)#exit
+Wed Jul 15 20:21:56 2026   SW1   SW1(config-if)#do sh port-security address
+Wed Jul 15 20:21:59 2026   SW1   SW1(config-if)#exit
+Wed Jul 15 20:26:00 2026   SW1   SW1(config)#do sh port-security address
+Wed Jul 15 20:27:11 2026   SW2   SW2(config)#end
+Wed Jul 15 20:27:19 2026   SW2   SW2#sh mac-address-table ?
+Wed Jul 15 20:27:21 2026   SW2   SW2#sh mac-address-table 
+Wed Jul 15 20:27:25 2026   SW2   SW2#sh mac-address-table ?
+Wed Jul 15 20:27:30 2026   SW2   SW2#sh mac-address-table interfaces 
+Wed Jul 15 20:27:34 2026   SW2   SW2#sh mac-address-table interfaces ?
+Wed Jul 15 20:28:01 2026   SW2   SW2#sh port-security address 
+Wed Jul 15 20:32:35 2026   SW1   SW1(config)#end
+Wed Jul 15 20:32:40 2026   SW1   SW1#write
+Wed Jul 15 20:32:51 2026   SW2   SW2#write
+Wed Jul 15 22:22:35 2026   MLS1   MLS1>en
+Wed Jul 15 22:22:54 2026   MLS1   MLS1#conf t
+Wed Jul 15 22:24:20 2026   MLS1   MLS1(config)#do sh vlan brief
+Wed Jul 15 22:24:37 2026   MLS1   MLS1(config)#int ?
+Wed Jul 15 22:24:45 2026   MLS1   MLS1(config)#int vlan 10
+Wed Jul 15 22:24:52 2026   MLS1   MLS1(config-if)#ip ?
+Wed Jul 15 22:25:10 2026   MLS1   MLS1(config-if)#ip address 192.168.10.2 255.255.255.0
+Wed Jul 15 22:25:32 2026   MLS1   MLS1(config-if)#int vlan 20
+Wed Jul 15 22:25:48 2026   MLS1   MLS1(config-if)#ip address 192.168.20.1 255.255.255.0
+Wed Jul 15 22:26:03 2026   MLS1   MLS1(config-if)#int vlan 30
+Wed Jul 15 22:26:07 2026   MLS1   MLS1(config-if)#ip address 192.168.30.1 255.255.255.0
+Wed Jul 15 22:26:38 2026   MLS1   MLS1(config-if)#exit
+Wed Jul 15 22:26:44 2026   MLS1   MLS1(config)#ip rou?
+Wed Jul 15 22:26:51 2026   MLS1   MLS1(config)#ip routing ?
+Wed Jul 15 22:26:53 2026   MLS1   MLS1(config)#ip routing
+Wed Jul 15 22:27:15 2026   MLS2   MLS2>en
+Wed Jul 15 22:27:25 2026   MLS2   MLS2#conf t
+Wed Jul 15 22:27:40 2026   MLS2   MLS2(config)#interface vlan 10
+Wed Jul 15 22:27:57 2026   MLS2   MLS2(config-if)#ip address 172.16.10.2 255.255.255.0
+Wed Jul 15 22:28:01 2026   MLS2   MLS2(config-if)#interface vlan 20
+Wed Jul 15 22:28:17 2026   MLS2   MLS2(config-if)#ip address 172.16.20.1 255.255.255.0
+Wed Jul 15 22:28:20 2026   MLS2   MLS2(config-if)#interface vlan 30
+Wed Jul 15 22:28:36 2026   MLS2   MLS2(config-if)#ip address 172.16.30.1 255.255.255.0
+Wed Jul 15 22:28:39 2026   MLS2   MLS2(config-if)#exit
+Wed Jul 15 22:28:45 2026   MLS2   MLS2(config)#ip routing 
+Wed Jul 15 22:29:28 2026   HO_RTR (R1)   HO_RTR>en
+Wed Jul 15 22:30:05 2026   HO_RTR (R1)   HO_RTR#conf t
+Wed Jul 15 22:30:43 2026   HO_RTR (R1)   HO_RTR(config)#int g0/0.10
+Wed Jul 15 22:31:30 2026   HO_RTR (R1)   HO_RTR(config-subif)#ip address 192.168.10.1 255.255.255.0
+Wed Jul 15 22:31:51 2026   HO_RTR (R1)   HO_RTR(config-subif)#?
+Wed Jul 15 22:31:58 2026   HO_RTR (R1)   HO_RTR(config-subif)#encapsulation ?
+Wed Jul 15 22:32:03 2026   HO_RTR (R1)   HO_RTR(config-subif)#encapsulation dot1Q ?
+Wed Jul 15 22:32:18 2026   HO_RTR (R1)   HO_RTR(config-subif)#encapsulation dot1Q 10 ?
+Wed Jul 15 22:32:27 2026   HO_RTR (R1)   HO_RTR(config-subif)#encapsulation dot1Q 10
+Wed Jul 15 22:32:35 2026   HO_RTR (R1)   HO_RTR(config-subif)#ip address 192.168.10.1 255.255.255.0
+Wed Jul 15 22:34:01 2026   HO_RTR (R1)   HO_RTR(config-subif)#?
+Wed Jul 15 22:34:59 2026   HO_RTR (R1)   HO_RTR(config-subif)#exit
+Wed Jul 15 22:35:03 2026   HO_RTR (R1)   HO_RTR(config)#?
+Wed Jul 15 22:35:29 2026   HO_RTR (R1)   HO_RTR(config)#int g0/0.20
+Wed Jul 15 22:35:32 2026   HO_RTR (R1)   HO_RTR(config-subif)#?
+Wed Jul 15 22:35:44 2026   HO_RTR (R1)   HO_RTR(config-subif)#encapsulation ?
+Wed Jul 15 22:35:49 2026   HO_RTR (R1)   HO_RTR(config-subif)#encapsulation dot1Q ?
+Wed Jul 15 22:36:05 2026   HO_RTR (R1)   HO_RTR(config-subif)#encapsulation dot1Q 20
+Wed Jul 15 22:36:56 2026   HO_RTR (R1)   HO_RTR(config-subif)#ip address 192.168.20.1 255.255.255.0
+Wed Jul 15 22:37:07 2026   HO_RTR (R1)   HO_RTR(config-subif)#int g0/0.30
+Wed Jul 15 22:37:12 2026   HO_RTR (R1)   HO_RTR(config-subif)#encapsulation dot1Q 30
+Wed Jul 15 22:37:26 2026   HO_RTR (R1)   HO_RTR(config-subif)#ip address 192.168.30.1 255.255.255.0
+Wed Jul 15 22:37:56 2026   HO_RTR (R1)   HO_RTR(config-subif)#exit
+Wed Jul 15 22:38:01 2026   HO_RTR (R1)   HO_RTR(config)#int g0/0
+Wed Jul 15 22:38:05 2026   HO_RTR (R1)   HO_RTR(config-if)#no shut
+Wed Jul 15 22:39:03 2026   BO_RTR (R2)   BO_RTR>en
+Wed Jul 15 22:39:15 2026   BO_RTR (R2)   BO_RTR#conf t
+Wed Jul 15 22:39:23 2026   BO_RTR (R2)   BO_RTR(config)#int g0/0
+Wed Jul 15 22:39:26 2026   BO_RTR (R2)   BO_RTR(config-if)#no shut
+Wed Jul 15 22:39:48 2026   BO_RTR (R2)   BO_RTR(config-if)#int g0/0.10
+Wed Jul 15 22:40:22 2026   BO_RTR (R2)   BO_RTR(config-subif)#encapsulation dot1Q 10
+Wed Jul 15 22:41:42 2026   BO_RTR (R2)   BO_RTR(config-subif)#ip address 172.16.10.1 255.255.255.0
+Wed Jul 15 22:41:50 2026   BO_RTR (R2)   BO_RTR(config-subif)#int g0/0.20
+Wed Jul 15 22:41:54 2026   BO_RTR (R2)   BO_RTR(config-subif)#encapsulation dot1Q 20
+Wed Jul 15 22:42:09 2026   BO_RTR (R2)   BO_RTR(config-subif)#ip address 172.16.20.1 255.255.255.0
+Wed Jul 15 22:42:17 2026   BO_RTR (R2)   BO_RTR(config-subif)#int g0/0.30
+Wed Jul 15 22:42:21 2026   BO_RTR (R2)   BO_RTR(config-subif)#encapsulation dot1Q 30
+Wed Jul 15 22:42:38 2026   BO_RTR (R2)   BO_RTR(config-subif)#ip address 172.16.30.1 255.255.255.0
+Wed Jul 15 22:42:42 2026   BO_RTR (R2)   BO_RTR(config-subif)#exit
+Wed Jul 15 22:42:47 2026   BO_RTR (R2)   BO_RTR(config)#int g0/0
+Wed Jul 15 22:42:52 2026   BO_RTR (R2)   BO_RTR(config-if)#no shut
+Wed Jul 15 23:58:20 2026   MLS1   MLS1>en
+Wed Jul 15 23:58:31 2026   MLS1   MLS1#conf t
+Wed Jul 15 23:58:45 2026   MLS1   MLS1(config)#int vlan 20
+Wed Jul 15 23:59:37 2026   MLS1   MLS1(config-if)#no ip address 192.168.20.1 255.255.255.0
+Thu Jul 16 00:00:11 2026   MLS1   MLS1(config-if)#ip address 192.168.20.2 255.255.255.0
+Thu Jul 16 00:00:20 2026   MLS1   MLS1(config-if)#exit
+Thu Jul 16 00:00:24 2026   MLS1   MLS1(config)#int vlan 30
+Thu Jul 16 00:00:50 2026   MLS1   MLS1(config-if)#no ip address 192.168.30.1 255.255.255.0
+Thu Jul 16 00:01:05 2026   MLS1   MLS1(config-if)#ip address 192.168.30.2 255.255.255.0
+Thu Jul 16 00:01:12 2026   MLS1   MLS1(config-if)#exit
+Thu Jul 16 00:01:27 2026   MLS2   MLS2>en
+Thu Jul 16 00:01:58 2026   MLS2   MLS2#conf t
+Thu Jul 16 00:02:27 2026   MLS2   MLS2(config)#int vlan 20
+Thu Jul 16 00:02:50 2026   MLS2   MLS2(config-if)#no ip address 172.16.20.1 255.255.255.0
+Thu Jul 16 00:02:59 2026   MLS2   MLS2(config-if)#ip address 172.16.20.2 255.255.255.0
+Thu Jul 16 00:03:03 2026   MLS2   MLS2(config-if)#exit
+Thu Jul 16 00:03:08 2026   MLS2   MLS2(config)#int vlan 30
+Thu Jul 16 00:03:26 2026   MLS2   MLS2(config-if)#no ip address 172.16.30.1 255.255.255.0
+Thu Jul 16 00:03:38 2026   MLS2   MLS2(config-if)#ip address 172.16.30.2 255.255.255.0
+Thu Jul 16 00:03:40 2026   MLS2   MLS2(config-if)#exit
+Thu Jul 16 01:19:45 2026   MLS1   MLS1>en
+Thu Jul 16 01:19:58 2026   MLS1   MLS1#write
+Thu Jul 16 01:20:17 2026   MLS2   MLS2>en
+Thu Jul 16 01:21:02 2026   MLS2   MLS2>en
+Thu Jul 16 01:21:16 2026   MLS2   MLS2#write
+Thu Jul 16 01:21:41 2026   HO_RTR (R1)   HO_RTR>en
+Thu Jul 16 01:21:50 2026   HO_RTR (R1)   HO_RTR#write
+Thu Jul 16 01:22:02 2026   BO_RTR (R2)   BO_RTR>en
+Thu Jul 16 01:22:23 2026   BO_RTR (R2)   BO_RTR#write
+Fri Jul 17 23:29:20 2026   SW1   SW1>en
+Fri Jul 17 23:29:36 2026   SW1   SW1#sh vlan brief
+Fri Jul 17 23:30:52 2026   SW1   SW1#conf t
+Fri Jul 17 23:30:56 2026   SW1   SW1(config)#int ?
+Fri Jul 17 23:31:02 2026   SW1   SW1(config)#int vlan 1
+Fri Jul 17 23:31:06 2026   SW1   SW1(config-if)#?
+Fri Jul 17 23:31:15 2026   SW1   SW1(config-if)#ip ?
+Fri Jul 17 23:33:01 2026   SW1   SW1(config-if)#ip address 192.168.10.10 255.255.255.0
+Fri Jul 17 23:33:04 2026   SW1   SW1(config-if)#no shut
+Fri Jul 17 23:33:19 2026   SW2   SW2>en
+Fri Jul 17 23:33:35 2026   SW2   SW2#conf t
+Fri Jul 17 23:33:59 2026   SW2   SW2(config)#int vlan 1
+Fri Jul 17 23:34:06 2026   SW2   SW2(config-if)#ip address 172.16.10.10 255.255.255.0
+Fri Jul 17 23:34:08 2026   SW2   SW2(config-if)#no shut
+Fri Jul 17 23:34:26 2026   SW1   SW1(config-if)#exit
+Fri Jul 17 23:34:30 2026   SW1   SW1(config)#default ?
+Fri Jul 17 23:34:35 2026   SW1   SW1(config)#?
+Fri Jul 17 23:34:54 2026   SW1   SW1(config)#ip ?
+Fri Jul 17 23:35:06 2026   SW1   SW1(config)#ip default-gateway 192.168.10.1
+Fri Jul 17 23:35:13 2026   SW1   SW1(config)#no shut
+Fri Jul 17 23:35:26 2026   SW2   SW2(config-if)#exit
+Fri Jul 17 23:35:29 2026   SW2   SW2(config)#ip ?
+Fri Jul 17 23:35:40 2026   SW2   SW2(config)#ip default-gateway 172.16.10.1
+Fri Jul 17 23:40:33 2026   SW1   SW1(config)#end
+Fri Jul 17 23:40:36 2026   SW1   SW1#write
+Fri Jul 17 23:40:44 2026   SW2   SW2(config)#end
+Fri Jul 17 23:40:47 2026   SW2   SW2#write
+Fri Jul 17 23:41:27 2026   HO_RTR (R1)   HO_RTR>en
+Fri Jul 17 23:41:35 2026   HO_RTR (R1)   HO_RTR#conf t
+Fri Jul 17 23:41:40 2026   HO_RTR (R1)   HO_RTR(config)#end
+Fri Jul 17 23:41:43 2026   HO_RTR (R1)   HO_RTR#sh controllers 
+Fri Jul 17 23:42:10 2026   BO_RTR (R2)   BO_RTR>en
+Fri Jul 17 23:42:20 2026   BO_RTR (R2)   BO_RTR#conf t
+Fri Jul 17 23:42:24 2026   BO_RTR (R2)   BO_RTR(config)#end
+Fri Jul 17 23:42:28 2026   BO_RTR (R2)   BO_RTR#sh controllers 
+Fri Jul 17 23:42:47 2026   BO_RTR (R2)   BO_RTR#conf t
+Fri Jul 17 23:42:53 2026   BO_RTR (R2)   BO_RTR(config)#int s0/0/0
+Fri Jul 17 23:42:58 2026   BO_RTR (R2)   BO_RTR(config-if)#?
+Fri Jul 17 23:43:01 2026   BO_RTR (R2)   BO_RTR(config-if)#clock ?
+Fri Jul 17 23:43:04 2026   BO_RTR (R2)   BO_RTR(config-if)#clock rate ?
+Fri Jul 17 23:43:11 2026   BO_RTR (R2)   BO_RTR(config-if)#clock rate 64000
+Fri Jul 17 23:53:55 2026   HO_RTR (R1)   HO_RTR>en
+Fri Jul 17 23:54:10 2026   HO_RTR (R1)   HO_RTR#conf t
+Fri Jul 17 23:54:41 2026   HO_RTR (R1)   HO_RTR(config)#int s0/0/1
+Fri Jul 17 23:57:11 2026   HO_RTR (R1)   HO_RTR(config-if)#ip address 172.16.0.1 255.255.255.252
+Fri Jul 17 23:57:14 2026   HO_RTR (R1)   HO_RTR(config-if)#no shut
+Fri Jul 17 23:59:04 2026   BO_RTR (R2)   BO_RTR>en
+Fri Jul 17 23:59:16 2026   BO_RTR (R2)   BO_RTR#en
+Fri Jul 17 23:59:22 2026   BO_RTR (R2)   BO_RTR#conf t
+Fri Jul 17 23:59:34 2026   BO_RTR (R2)   BO_RTR(config)#int s0/0/0
+Fri Jul 17 23:59:47 2026   BO_RTR (R2)   BO_RTR(config-if)#ip address 172.16.0.2 255.255.255.252
+Fri Jul 17 23:59:50 2026   BO_RTR (R2)   BO_RTR(config-if)#no shut
+Sat Jul 18 00:00:41 2026   ISP_RTR   ISP_RTR>en
+Sat Jul 18 00:00:51 2026   ISP_RTR   ISP_RTR#conf t
+Sat Jul 18 00:01:05 2026   ISP_RTR   ISP_RTR(config)#int s0/0/0
+Sat Jul 18 00:01:19 2026   ISP_RTR   ISP_RTR(config-if)#clock rate 64000
+Sat Jul 18 00:01:23 2026   ISP_RTR   ISP_RTR(config-if)#exit
+Sat Jul 18 00:01:41 2026   ISP_RTR   ISP_RTR(config)#int s0/0/0
+Sat Jul 18 00:02:12 2026   ISP_RTR   ISP_RTR(config-if)#ip address 10.0.0.2 255.255.255.252
+Sat Jul 18 00:02:16 2026   ISP_RTR   ISP_RTR(config-if)#no shut
+Sat Jul 18 00:02:40 2026   HQ_RTR   HQ_RTR>en
+Sat Jul 18 00:02:47 2026   HQ_RTR   HQ_RTR#en
+Sat Jul 18 00:02:50 2026   HQ_RTR   HQ_RTR#conf t
+Sat Jul 18 00:11:48 2026   HO_RTR (R1)   HO_RTR>en
+Sat Jul 18 00:12:04 2026   HO_RTR (R1)   HO_RTR#en
+Sat Jul 18 00:12:07 2026   HO_RTR (R1)   HO_RTR#conf t
+Sat Jul 18 00:12:35 2026   HO_RTR (R1)   HO_RTR(config)#int s0/0/0
+Sat Jul 18 00:12:46 2026   HO_RTR (R1)   HO_RTR(config-if)#ip address 10.0.0.1 255.255.255.252
+Sat Jul 18 00:12:49 2026   HO_RTR (R1)   HO_RTR(config-if)#no shut
+Sat Jul 18 00:13:10 2026   ISP_RTR   ISP_RTR>en
+Sat Jul 18 00:13:19 2026   ISP_RTR   ISP_RTR#conf t
+Sat Jul 18 00:13:35 2026   ISP_RTR   ISP_RTR(config)#int g0/0
+Sat Jul 18 00:13:55 2026   ISP_RTR   ISP_RTR(config-if)#ip address 209.165.200.1 255.255.255.248
+Sat Jul 18 00:13:59 2026   ISP_RTR   ISP_RTR(config-if)#no shut
+Sat Jul 18 00:14:14 2026   HQ_RTR   HQ_RTR>en
+Sat Jul 18 00:14:25 2026   HQ_RTR   HQ_RTR#conf t
+Sat Jul 18 00:14:32 2026   HQ_RTR   HQ_RTR(config)#int g0/0
+Sat Jul 18 00:14:52 2026   HQ_RTR   HQ_RTR(config-if)#ip address 209.165.200.2 255.255.255.248
+Sat Jul 18 00:14:55 2026   HQ_RTR   HQ_RTR(config-if)#no shut
+Sat Jul 18 00:15:14 2026   HQ_RTR   HQ_RTR(config-if)#?
+Sat Jul 18 00:15:21 2026   HQ_RTR   HQ_RTR(config-if)#int ?
+Sat Jul 18 00:15:26 2026   HQ_RTR   HQ_RTR(config-if)#exit
+Sat Jul 18 00:15:30 2026   HQ_RTR   HQ_RTR(config)#interface ?
+Sat Jul 18 00:15:34 2026   HQ_RTR   HQ_RTR(config)#interface loopback ?
+Sat Jul 18 00:15:58 2026   HQ_RTR   HQ_RTR(config)#interface loopback 0
+Sat Jul 18 00:16:05 2026   HQ_RTR   HQ_RTR(config-if)#?
+Sat Jul 18 00:16:18 2026   HQ_RTR   HQ_RTR(config-if)#ip address 192.168.200.1 255.255.255.255
+Sat Jul 18 00:16:21 2026   HQ_RTR   HQ_RTR(config-if)#no shut
+Sat Jul 18 00:16:31 2026   HQ_RTR   HQ_RTR(config-if)#interface loopback 1
+Sat Jul 18 00:16:45 2026   HQ_RTR   HQ_RTR(config-if)#ip address 192.168.200.2 255.255.255.255
+Sat Jul 18 00:16:47 2026   HQ_RTR   HQ_RTR(config-if)#no shut
+Sat Jul 18 00:16:51 2026   HQ_RTR   HQ_RTR(config-if)#exit
+Sat Jul 18 00:18:05 2026   HQ_RTR   HQ_RTR(config)#end
+Sat Jul 18 00:18:08 2026   HQ_RTR   HQ_RTR#write
+Sat Jul 18 00:18:15 2026   ISP_RTR   ISP_RTR(config-if)#end
+Sat Jul 18 00:18:17 2026   ISP_RTR   ISP_RTR#write
+Sat Jul 18 00:18:25 2026   HO_RTR (R1)   HO_RTR(config-if)#end
+Sat Jul 18 00:18:28 2026   HO_RTR (R1)   HO_RTR#write
+Sat Jul 18 00:18:42 2026   BO_RTR (R2)   BO_RTR>en
+Sat Jul 18 00:18:50 2026   BO_RTR (R2)   BO_RTR#write
+Sat Jul 18 00:36:09 2026   HQ_RTR   HQ_RTR>en
+Sat Jul 18 00:36:20 2026   HQ_RTR   HQ_RTR#sh ip int route
+Sat Jul 18 00:36:24 2026   HQ_RTR   HQ_RTR#sh ip int brief
+Sat Jul 18 00:37:57 2026   ISP_RTR   ISP_RTR>en
+Sat Jul 18 00:38:11 2026   ISP_RTR   ISP_RTR#sh ip int brief
+Sat Jul 18 00:38:57 2026   HO_RTR (R1)   HO_RTR>en
+Sat Jul 18 00:39:07 2026   HO_RTR (R1)   HO_RTR#sh ip int brief
+Sat Jul 18 00:40:56 2026   BO_RTR (R2)   BO_RTR>en
+Sat Jul 18 00:41:09 2026   BO_RTR (R2)   BO_RTR#sh ip int brief
+Sat Jul 18 17:44:54 2026   HO_RTR (R1)   HO_RTR>en
+Sat Jul 18 17:45:10 2026   HO_RTR (R1)   HO_RTR#sh ip route
+Sat Jul 18 17:46:49 2026   HQ_RTR   HQ_RTR>en
+Sat Jul 18 17:46:59 2026   HQ_RTR   HQ_RTR#conf t
+Sat Jul 18 17:47:02 2026   HQ_RTR   HQ_RTR(config)#end
+Sat Jul 18 17:47:09 2026   HQ_RTR   HQ_RTR#sh ip route
+Sat Jul 18 17:47:34 2026   ISP_RTR   ISP_RTR>en
+Sat Jul 18 17:47:44 2026   ISP_RTR   ISP_RTR#sh ip route
+Sat Jul 18 17:48:25 2026   BO_RTR (R2)   BO_RTR>en
+Sat Jul 18 17:48:34 2026   BO_RTR (R2)   BO_RTR#sh ip route
+Sat Jul 18 22:01:16 2026   HQ_RTR   HQ_RTR>en
+Sat Jul 18 22:01:44 2026   HQ_RTR   HQ_RTR#conf t
+Sat Jul 18 22:01:49 2026   HQ_RTR   HQ_RTR(config)#ip route 10.0.0.0 255.255.255.252 209.165.200.1
+Sat Jul 18 22:02:02 2026   HQ_RTR   HQ_RTR(config)#ip route 209.165.200.0 255.255.255.248 209.165.200.1
+Sat Jul 18 22:02:14 2026   HQ_RTR   HQ_RTR(config)#ip route 10.0.0.0 255.255.255.252 209.165.200.1
+Sat Jul 18 22:02:26 2026   HQ_RTR   HQ_RTR(config)#ip route 172.16.0.0 255.255.255.252 209.165.200.1
+Sat Jul 18 22:02:37 2026   HQ_RTR   HQ_RTR(config)#ip route 192.168.10.0 255.255.255.0 209.165.200.1
+Sat Jul 18 22:02:49 2026   HQ_RTR   HQ_RTR(config)#ip route 192.168.20.0 255.255.255.0 209.165.200.1
+Sat Jul 18 22:04:54 2026   HQ_RTR   HQ_RTR(config)#ip route 192.168.30.0 255.255.255.0 209.165.200.1
+Sat Jul 18 22:05:03 2026   HQ_RTR   HQ_RTR(config)#ip route 172.16.0.0 255.255.255.252 209.165.200.1
+Sat Jul 18 22:05:09 2026   HQ_RTR   HQ_RTR(config)#ip route 172.16.10.0 255.255.255.0 209.165.200.1
+Sat Jul 18 22:05:15 2026   HQ_RTR   HQ_RTR(config)#ip route 172.16.20.0 255.255.255.0 209.165.200.1
+Sat Jul 18 22:05:21 2026   HQ_RTR   HQ_RTR(config)#ip route 172.16.30.0 255.255.255.0 209.165.200.1
+Sat Jul 18 22:05:28 2026   HQ_RTR   HQ_RTR(config)#ip route 0.0.0.0 0.0.0.0 209.165.200.1
+Sat Jul 18 22:05:34 2026   HQ_RTR   HQ_RTR(config)#end
+Sat Jul 18 22:05:47 2026   ISP_RTR   ISP_RTR>en
+Sat Jul 18 22:05:59 2026   ISP_RTR   ISP_RTR#conf t
+Sat Jul 18 22:06:07 2026   ISP_RTR   ISP_RTR(config)#ip route 192.168.200.1 255.255.255.255 209.165.200.2
+Sat Jul 18 22:06:13 2026   ISP_RTR   ISP_RTR(config)#ip route 192.168.200.2 255.255.255.255 209.165.200.2
+Sat Jul 18 22:06:18 2026   ISP_RTR   ISP_RTR(config)#ip route 209.165.200.0 255.255.255.248 209.165.200.2
+Sat Jul 18 22:06:23 2026   ISP_RTR   ISP_RTR(config)#ip route 10.0.0.0 255.255.255.252 10.0.0.1
+Sat Jul 18 22:06:29 2026   ISP_RTR   ISP_RTR(config)#ip route 172.16.0.0 255.255.255.252 10.0.0.1
+Sat Jul 18 22:06:35 2026   ISP_RTR   ISP_RTR(config)#ip route 192.168.10.0 255.255.255.0 10.0.0.1
+Sat Jul 18 22:06:40 2026   ISP_RTR   ISP_RTR(config)#ip route 192.168.20.0 255.255.255.0 10.0.0.1
+Sat Jul 18 22:06:45 2026   ISP_RTR   ISP_RTR(config)#ip route 192.168.30.0 255.255.255.0 10.0.0.1
+Sat Jul 18 22:06:50 2026   ISP_RTR   ISP_RTR(config)#ip route 172.16.0.0 255.255.255.252 10.0.0.1
+Sat Jul 18 22:06:56 2026   ISP_RTR   ISP_RTR(config)#ip route 172.16.10.0 255.255.255.0 10.0.0.1
+Sat Jul 18 22:07:01 2026   ISP_RTR   ISP_RTR(config)#ip route 172.16.20.0 255.255.255.0 10.0.0.1
+Sat Jul 18 22:07:06 2026   ISP_RTR   ISP_RTR(config)#ip route 172.16.30.0 255.255.255.0 10.0.0.1
+Sat Jul 18 22:07:11 2026   ISP_RTR   ISP_RTR(config)#ip route 0.0.0.0 0.0.0.0 209.165.200.2
+Sat Jul 18 22:07:18 2026   ISP_RTR   ISP_RTR(config)#end
+Sat Jul 18 22:07:30 2026   HO_RTR (R1)   HO_RTR>en
+Sat Jul 18 22:07:37 2026   HO_RTR (R1)   HO_RTR#conf t
+Sat Jul 18 22:07:45 2026   HO_RTR (R1)   HO_RTR(config)#ip route 192.168.200.1 255.255.255.255 10.0.0.2
+Sat Jul 18 22:07:51 2026   HO_RTR (R1)   HO_RTR(config)#ip route 192.168.200.2 255.255.255.255 10.0.0.2
+Sat Jul 18 22:07:57 2026   HO_RTR (R1)   HO_RTR(config)#ip route 209.165.200.0 255.255.255.248 10.0.0.2
+Sat Jul 18 22:08:02 2026   HO_RTR (R1)   HO_RTR(config)#ip route 10.0.0.0 255.255.255.252 10.0.0.2
+Sat Jul 18 22:08:07 2026   HO_RTR (R1)   HO_RTR(config)#ip route 209.165.200.0 255.255.255.248 10.0.0.2
+Sat Jul 18 22:08:13 2026   HO_RTR (R1)   HO_RTR(config)#ip route 172.16.0.0 255.255.255.252 172.16.0.2
+Sat Jul 18 22:08:19 2026   HO_RTR (R1)   HO_RTR(config)#ip route 172.16.10.0 255.255.255.0 172.16.0.2
+Sat Jul 18 22:08:24 2026   HO_RTR (R1)   HO_RTR(config)#ip route 172.16.20.0 255.255.255.0 172.16.0.2
+Sat Jul 18 22:08:29 2026   HO_RTR (R1)   HO_RTR(config)#ip route 172.16.30.0 255.255.255.0 172.16.0.2
+Sat Jul 18 22:08:34 2026   HO_RTR (R1)   HO_RTR(config)#ip route 0.0.0.0 0.0.0.0 10.0.0.2
+Sat Jul 18 22:08:38 2026   HO_RTR (R1)   HO_RTR(config)#end
+Sat Jul 18 22:08:51 2026   BO_RTR (R2)   BO_RTR>en
+Sat Jul 18 22:09:01 2026   BO_RTR (R2)   BO_RTR#conf t
+Sat Jul 18 22:09:10 2026   BO_RTR (R2)   BO_RTR(config)#ip route 192.168.200.1 255.255.255.255 172.16.0.1
+Sat Jul 18 22:09:15 2026   BO_RTR (R2)   BO_RTR(config)#ip route 192.168.200.2 255.255.255.255 172.16.0.1
+Sat Jul 18 22:09:21 2026   BO_RTR (R2)   BO_RTR(config)#ip route 209.165.200.0 255.255.255.248 172.16.0.1
+Sat Jul 18 22:09:26 2026   BO_RTR (R2)   BO_RTR(config)#ip route 10.0.0.0 255.255.255.252 172.16.0.1
+Sat Jul 18 22:09:31 2026   BO_RTR (R2)   BO_RTR(config)#ip route 209.165.200.0 255.255.255.248 172.16.0.1
+Sat Jul 18 22:09:36 2026   BO_RTR (R2)   BO_RTR(config)#ip route 10.0.0.0 255.255.255.252 172.16.0.1
+Sat Jul 18 22:09:45 2026   BO_RTR (R2)   BO_RTR(config)#ip route 172.16.0.0 255.255.255.252 172.16.0.1
+Sat Jul 18 22:09:50 2026   BO_RTR (R2)   BO_RTR(config)#ip route 192.168.10.0 255.255.255.0 172.16.0.1
+Sat Jul 18 22:09:56 2026   BO_RTR (R2)   BO_RTR(config)#ip route 192.168.20.0 255.255.255.0 172.16.0.1
+Sat Jul 18 22:10:01 2026   BO_RTR (R2)   BO_RTR(config)#ip route 192.168.30.0 255.255.255.0 172.16.0.1
+Sat Jul 18 22:10:07 2026   BO_RTR (R2)   BO_RTR(config)#ip route 0.0.0.0 0.0.0.0 172.16.0.1
+Sat Jul 18 22:10:10 2026   BO_RTR (R2)   BO_RTR(config)#end
+Sat Jul 18 22:10:54 2026   HQ_RTR   HQ_RTR#ping 172.16.10.1
+Sat Jul 18 22:11:00 2026   HQ_RTR   HQ_RTR#ping 172.16.10.1
+Sat Jul 18 22:11:36 2026   HQ_RTR   HQ_RTR#write
+Sat Jul 18 22:11:43 2026   ISP_RTR   ISP_RTR#write
+Sat Jul 18 22:11:51 2026   HO_RTR (R1)   HO_RTR#write
+Sat Jul 18 22:11:58 2026   BO_RTR (R2)   BO_RTR#write
+Sat Jul 18 23:41:11 2026   ISP_RTR   ISP_RTR>en
+Sat Jul 18 23:41:26 2026   ISP_RTR   ISP_RTR#conf t
+Sat Jul 18 23:41:36 2026   ISP_RTR   ISP_RTR(config)#end
+Sat Jul 18 23:41:46 2026   ISP_RTR   ISP_RTR#sh ip int route
+Sat Jul 18 23:41:51 2026   ISP_RTR   ISP_RTR#sh ip route
+Sat Jul 18 23:44:57 2026   HO_RTR (R1)   HO_RTR>en
+Sat Jul 18 23:45:14 2026   HO_RTR (R1)   HO_RTR#conf t
+Sat Jul 18 23:45:22 2026   HO_RTR (R1)   HO_RTR(config)#ip ?
+Sat Jul 18 23:45:28 2026   HO_RTR (R1)   HO_RTR(config)#ip dhcp ?
+Sat Jul 18 23:45:50 2026   HO_RTR (R1)   HO_RTR(config)#ip dhcp excluded-address 192.168.10.1 192.168.10.20
+Sat Jul 18 23:45:52 2026   HO_RTR (R1)   HO_RTR(config)#?
+Sat Jul 18 23:46:02 2026   HO_RTR (R1)   HO_RTR(config)#ip dhcp ?
+Sat Jul 18 23:47:03 2026   HO_RTR (R1)   HO_RTR(config)#ip dhcp pool VLAN10_POOL
+Sat Jul 18 23:47:59 2026   HO_RTR (R1)   HO_RTR(dhcp-config)#network 192.168.10.0 255.255.255.0
+Sat Jul 18 23:48:01 2026   HO_RTR (R1)   HO_RTR(dhcp-config)#?
+Sat Jul 18 23:48:21 2026   HO_RTR (R1)   HO_RTR(dhcp-config)#default-router 192.168.10.1
+Sat Jul 18 23:48:22 2026   HO_RTR (R1)   HO_RTR(dhcp-config)#?
+Sat Jul 18 23:48:39 2026   HO_RTR (R1)   HO_RTR(dhcp-config)#dns?
+Sat Jul 18 23:48:52 2026   HO_RTR (R1)   HO_RTR(dhcp-config)#dns-server 192.168.10.200
+Sat Jul 18 23:48:54 2026   HO_RTR (R1)   HO_RTR(dhcp-config)#exit
+Sat Jul 18 23:49:39 2026   BO_RTR (R2)   BO_RTR>en
+Sat Jul 18 23:49:48 2026   BO_RTR (R2)   BO_RTR#conf t
+Sat Jul 18 23:50:00 2026   BO_RTR (R2)   BO_RTR(config)#ip ?
+Sat Jul 18 23:50:09 2026   BO_RTR (R2)   BO_RTR(config)#ip dhcp ?
+Sat Jul 18 23:50:23 2026   BO_RTR (R2)   BO_RTR(config)#ip dhcp excluded-address 172.16.10.1 172.16.10.20
+Sat Jul 18 23:50:33 2026   BO_RTR (R2)   BO_RTR(config)#ip dhcp ?
+Sat Jul 18 23:51:05 2026   BO_RTR (R2)   BO_RTR(config)#ip dhcp pool VLAN10_BO_POOL
+Sat Jul 18 23:51:10 2026   BO_RTR (R2)   BO_RTR(dhcp-config)#?
+Sat Jul 18 23:51:25 2026   BO_RTR (R2)   BO_RTR(dhcp-config)#default-router 172.16.10.1
+Sat Jul 18 23:51:39 2026   BO_RTR (R2)   BO_RTR(dhcp-config)#dns-server 172.16.10.1
+Sat Jul 18 23:51:57 2026   BO_RTR (R2)   BO_RTR(dhcp-config)#network R2(config)# ip dhcp excluded-address 172.16.10.1 172.16.10.20
+Sat Jul 18 23:51:57 2026   BO_RTR (R2)   BO_RTR(dhcp-config)#R2(config)# ip dhcp pool VLAN10_BO_POOL
+Sat Jul 18 23:51:57 2026   BO_RTR (R2)   BO_RTR(dhcp-config)#R2(dhcp-config)# network 172.16.10.0 255.255.255.0
+Sat Jul 18 23:51:57 2026   BO_RTR (R2)   BO_RTR(dhcp-config)#R2(dhcp-config)# default-router 172.16.10.1
+Sat Jul 18 23:51:57 2026   BO_RTR (R2)   BO_RTR(dhcp-config)#R2(dhcp-config)# dns-server 172.16.10.1
+Sat Jul 18 23:52:51 2026   BO_RTR (R2)   BO_RTR(dhcp-config)#network 172.16.10.0 255.255.255.0
+Sat Jul 18 23:53:00 2026   BO_RTR (R2)   BO_RTR(dhcp-config)#?
+Sat Jul 18 23:53:04 2026   BO_RTR (R2)   BO_RTR(dhcp-config)#exit
+Sat Jul 18 23:57:45 2026   HQ_RTR   HQ_RTR>en
+Sat Jul 18 23:57:52 2026   HQ_RTR   HQ_RTR#write
+Sat Jul 18 23:58:02 2026   ISP_RTR   ISP_RTR>en
+Sat Jul 18 23:58:11 2026   ISP_RTR   ISP_RTR#write
+Sat Jul 18 23:58:23 2026   HO_RTR (R1)   HO_RTR(config)#end
+Sat Jul 18 23:58:27 2026   HO_RTR (R1)   HO_RTR#write
+Sat Jul 18 23:58:36 2026   BO_RTR (R2)   BO_RTR(config)#end
+Sat Jul 18 23:58:39 2026   BO_RTR (R2)   BO_RTR#write
+Wed Jul 29 07:20:14 2026   HO_RTR (R1)   HO_RTR>en
+Wed Jul 29 07:21:42 2026   HO_RTR (R1)   HO_RTR>en
+Wed Jul 29 07:22:47 2026   HO_RTR (R1)   HO_RTR#conf t
+Wed Jul 29 07:22:56 2026   HO_RTR (R1)   HO_RTR(config)#access-list 1 ?
+Wed Jul 29 07:23:00 2026   HO_RTR (R1)   HO_RTR(config)#access-list 1 deny ?
+Wed Jul 29 07:23:19 2026   HO_RTR (R1)   HO_RTR(config)#access-list 1 deny host 192.168.30.100
+Wed Jul 29 07:23:32 2026   HO_RTR (R1)   HO_RTR(config)#access-list 1 permit any 
+Wed Jul 29 07:23:47 2026   HO_RTR (R1)   HO_RTR(config)#int g0/0.30
+Wed Jul 29 07:23:58 2026   HO_RTR (R1)   HO_RTR(config-subif)#ip access-group 1 out
+Wed Jul 29 07:24:09 2026   HO_RTR (R1)   HO_RTR(config-subif)#exit
+Wed Jul 29 07:24:22 2026   BO_RTR (R2)   BO_RTR>en
+Wed Jul 29 07:24:29 2026   BO_RTR (R2)   BO_RTR#conf t
+Wed Jul 29 07:25:06 2026   BO_RTR (R2)   BO_RTR(config)#access-list 100 permit ip host 172.16.10.100 host 192.168.20.200
+Wed Jul 29 07:25:21 2026   BO_RTR (R2)   BO_RTR(config)#access-list 100 deny ip any any
+Wed Jul 29 07:25:34 2026   BO_RTR (R2)   BO_RTR(config)#int g0/0.10
+Wed Jul 29 07:25:43 2026   BO_RTR (R2)   BO_RTR(config-subif)#ip access-group 100 out
+Wed Jul 29 07:25:48 2026   BO_RTR (R2)   BO_RTR(config-subif)#end
+Wed Jul 29 07:26:28 2026   HQ_RTR   HQ_RTR>en
+Wed Jul 29 07:26:35 2026   HQ_RTR   HQ_RTR#conf t
+Wed Jul 29 07:26:51 2026   HQ_RTR   HQ_RTR(config)#clock timezone BST 6 0
+Wed Jul 29 07:27:05 2026   HQ_RTR   HQ_RTR(config)#ntp master 1
+Wed Jul 29 07:27:17 2026   HQ_RTR   HQ_RTR(config)#ntp ?
+Wed Jul 29 07:27:31 2026   HQ_RTR   HQ_RTR(config)#ntp authenticate
+Wed Jul 29 07:27:59 2026   HQ_RTR   HQ_RTR(config)#ntp authentication-key 1 md5 ntpkey123
+Wed Jul 29 07:28:09 2026   HQ_RTR   HQ_RTR(config)#ntp trusted-key 1
+Wed Jul 29 07:28:12 2026   HQ_RTR   HQ_RTR(config)#end
+Wed Jul 29 07:28:46 2026   HO_RTR (R1)   HO_RTR(config)#end
+Wed Jul 29 07:28:58 2026   HO_RTR (R1)   HO_RTR#conf t
+Wed Jul 29 07:29:14 2026   HO_RTR (R1)   HO_RTR(config)#clock timezone BST 6 0
+Wed Jul 29 07:29:28 2026   HO_RTR (R1)   HO_RTR(config)#ntp authenticate
+Wed Jul 29 07:29:59 2026   HO_RTR (R1)   HO_RTR(config)#ntp authentication-key 1 md5 ntpkey123
+Wed Jul 29 07:30:07 2026   HO_RTR (R1)   HO_RTR(config)#ntp trusted-key 1
+Wed Jul 29 07:30:28 2026   HO_RTR (R1)   HO_RTR(config)#ntp server 209.165.200.2 key 1
+Wed Jul 29 07:30:46 2026   BO_RTR (R2)   BO_RTR#conf t
+Wed Jul 29 07:31:04 2026   BO_RTR (R2)   BO_RTR(config)#clock timezone BST 6 0
+Wed Jul 29 07:31:14 2026   BO_RTR (R2)   BO_RTR(config)#ntp authenticate
+Wed Jul 29 07:31:25 2026   BO_RTR (R2)   BO_RTR(config)#ntp authentication-key 1 md5 ntpkey123
+Wed Jul 29 07:31:38 2026   BO_RTR (R2)   BO_RTR(config)#ntp trusted-key 1
+Wed Jul 29 07:31:49 2026   BO_RTR (R2)   BO_RTR(config)#ntp server 209.165.200.2 key 1
+Wed Jul 29 07:32:09 2026   ISP_RTR   ISP_RTR>en
+Wed Jul 29 07:32:19 2026   ISP_RTR   ISP_RTR#conf t
+Wed Jul 29 07:32:30 2026   ISP_RTR   ISP_RTR(config)#clock timezone BST 6 0
+Wed Jul 29 07:32:38 2026   ISP_RTR   ISP_RTR(config)#ntp authenticate
+Wed Jul 29 07:32:47 2026   ISP_RTR   ISP_RTR(config)#ntp authentication-key 1 md5 ntpkey123
+Wed Jul 29 07:32:55 2026   ISP_RTR   ISP_RTR(config)#ntp trusted-key 1
+Wed Jul 29 07:33:04 2026   ISP_RTR   ISP_RTR(config)#ntp server 209.165.200.2 key 1
+Wed Jul 29 07:33:36 2026   HO_RTR (R1)   HO_RTR(config)#end
+Wed Jul 29 07:33:38 2026   HO_RTR (R1)   HO_RTR#conf t
+Wed Jul 29 07:33:41 2026   HO_RTR (R1)   HO_RTR(config)#interface g0/0.10
+Wed Jul 29 07:33:49 2026   HO_RTR (R1)   HO_RTR(config-subif)#ip nat inside
+Wed Jul 29 07:33:56 2026   HO_RTR (R1)   HO_RTR(config-subif)#exit
+Wed Jul 29 07:34:07 2026   HO_RTR (R1)   HO_RTR(config)#interface serial 0/0/0
+Wed Jul 29 07:34:15 2026   HO_RTR (R1)   HO_RTR(config-if)#ip nat outside
+Wed Jul 29 07:34:22 2026   HO_RTR (R1)   HO_RTR(config-if)#exit
+Wed Jul 29 07:34:31 2026   HO_RTR (R1)   HO_RTR(config)#ip nat inside source static 192.168.10.100 10.0.0.10
